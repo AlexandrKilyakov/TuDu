@@ -1,0 +1,42 @@
+.modal {
+  max-width: 560px;
+  width: 100%;
+  border: 1px #ccc solid;
+  margin: auto;
+  overflow-y: auto;
+
+  &__body {
+    width: 100%;
+    padding: 32px;
+    background-color: #fff;
+  }
+
+  &__title {
+    width: fit-content;
+    margin: 0 auto 1em;
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 32px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    color: #ccc;
+    padding: 0;
+
+    &:hover {
+      color: #d10606;
+      background-color: transparent;
+    }
+
+    &::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+    }
+  }
+}
